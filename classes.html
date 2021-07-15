@@ -1,3 +1,27 @@
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Кодировка документа -->
+  <meta charset="utf-8">
+  <!-- Заголовок страницы -->
+  <title>Арт-студия</title>
+  <!-- Подключения таблицы стилей Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Подключение темы со стилями Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+  <!-- Подключение таблицы стилей иконок Awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Подключение скриптов Bootstrap 3 -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<body>
+  <!-- Основной контейнер -->
   <div class="container">
 
     
@@ -31,8 +55,9 @@
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Главная</a></li>
       <li><a href="#main">О проекте</a></li>
-      <li><a href="#method">Посмотреть уроки</a></li>
-      <li><a href="#work">Фотогалерея и отзывы</a></li>
+      <li><a href="#method">Бонусы от навыков</a></li>
+      <li><a href="#work">Основные направления</a></li>
+      <li><a href="classes.html">Посмотреть уроки</a></li>
     </ul>
     <!-- Список, выровненный по правому краю -->
     <ul class="nav navbar-nav navbar-right">
@@ -42,33 +67,164 @@
     </ul>
   </div>
 </nav>
-
-<div class="row">
-  
-  <!-- 1 Изображение -->
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Заголовок...</h3>
-        <p>Контент...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
+<div id="header-bottom" style="position:relative;">
+  <img src="images/banner.jpg" style="width:100%;">
+  <div id="bannertext" style="position:absolute; top:10%; width:100%; text-align:center; color:white;">
+    <!-- Этот блок будет отображаться на устройствах со средним и большим размером экрана -->
+    <div class="hidden-xs">
+      <h1>Добро пожаловать !!<br />
+        <small style="color: white;">Творчество – дешевле, чем психиатр!! :)</small>
+      </h1>
+    </div>
+    <!-- Этот блок будет отображаться только на устройствах с маленьким экраном -->
+    <div class="hidden-sm hidden-md hidden-lg">
+      <p class="lead">Творчество – дешевле, чем психиатр!! :)</p>
+    </div>
+    <!-- Кнопка "Бесплатная консультация" -->
+    <a class="btn btn-danger btn-lg">Выбрать урок</a>
+  </div>
+</div>  
+    
+    
+<div id="main">
+  <!-- Задаем новый ряд, с выравниванием текста внутри него по центру с помощью CSS свойства text-align -->
+  <div class="row" style="text-align:center;">
+    <!-- Создаём заголовок h2 с текстом "О компании" -->
+    <h2>О проекте</h2> 
+    <!-- Создаем горизонтальную линию -->
+    <hr />
+    <!-- Создаем блок, состоящий из 4 колонок Bootstrap 3 -->
+    <div class="col-md-4">
+      <!-- Отображаем изображение img-1.png -->
+      <img src="images/img-1.jpg">
+      <!-- Создаём заголовок внутри колонки -->
+      <h3>Как это выглядит?</h3>
+      <!-- Абзац с текстом -->
+      <p>Тут я расскажу про  про студию у меня дома и про выездные индивидуальные занятия</p>
+    </div>
+    <div class="col-md-4">
+      <img src="images/img-2.jpg">
+      <h3>Кто может прийти?</h3>
+      <p>Тут расскажу про возрастные категории, пол и прочее остальное.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="images/img-3.jpg">
+      <h3>О пользе от навыков</h3>
+      <p>Тут в нескольких предложениях про работу воображения, развитие мелкой моторики и прочее.</p>
     </div>
   </div>
-  
-  <!--...-->
-  
-  <!-- 12 Изображение -->
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="..." alt="...">
-      <div class="caption">
-        <h3>Заголовок...</h3>
-        <p>Контент...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-      </div>
-    </div>
-  </div>
-  
 </div>
+    
+    
+    
+    
+    <div id="method">
+        <div class="row" style="text-align:center; background:#f3f3f3;">
+            <h2>Бонусы от навков</h2>
+            <p class="lead">Что хорошего в рукоделии </p>
+            <hr />
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px;">
+                <li class="list1_img" style="float:left; width: 36%;"><img src="images/pic1.jpg" class="img-responsive"></li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Работа мелкой моторики рук</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px;">
+                <li class="list1_img" style="float:left; width: 36%;"><img src="images/pic2.jpg" class="img-responsive"></li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Развитие воображения</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px;">
+                <li class="list1_img" style="float:left; width: 36%;"><img src="images/pic3.jpg" class="img-responsive"></li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Весело провести время</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px;">
+                <li class="list1_img" style="float:left; width: 36%;"><img src="images/pic4.jpg" class="img-responsive"></li>
+                <li class="list1_desc" style="float:left; width:61%; margin-left:1em;"><h3>Возможность творить самому</h3>
+                    <p>Мы используем инвестиционный метод, который заключается в комплексном анализе вашего бизнеса для его продвижения. Мы начинаем с изучения преимуществ Вашей компании перед конкурентами. Составляет несколько бизнес-планов на усмотрения заказчика и контролируем весь процесс.</p>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+    </div>
+
+    <div id="work">
+        <div class="row" style="text-align:center; background:#f35e59; color:#fff;">
+            <h2>Основные направления в рукоделии</h2>
+            <p class="lead">*часто комбинируются</p>
+            <hr />
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px; color:black;">
+                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                    <h3>Шитьё вручную</h3>
+                  <p>Осваиваем основные виды стежков. Работаем с простыми тканями, фетром, кожа / кожезаменители</p>
+                </li>
+                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="images/w1.jpg" class="img-responsive"></li>
+                <div class="clearfix"> </div>
+            </ul>
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px; color:black;">
+                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                    <h3>Шитьё на швейной машине</h3>
+                   <p>Осваиваем работу на швейной машине. Доступна полноценная швейная машина, а также адаптированная для детей.Работаем с простыми тканями, трикотажем, фетром, искусственным мехом </p>
+                </li>
+                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="images/w2.jpg" class="img-responsive"></li>
+                <div class="clearfix"> </div>
+            </ul>
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px; color:black;">
+                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                    <h3>Вышивание</h3>
+                  <p>Осваиваем основные виды стежков. Работаем с простыми тканями, фетром</p>
+                </li>
+                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="images/w3.jpg" class="img-responsive"></li>
+                <div class="clearfix"> </div>
+            </ul>
+           <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px; color:black;">
+                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                    <h3>Вязание крючком</h3>
+                  <p>Осваиваем основные техники вязания крючком. Работаем с нитками разной толщины</p>
+                </li>
+                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="images/w4.jpg" class="img-responsive"></li>
+                <div class="clearfix"> </div>
+            </ul>
+            <ul style="list-style:none; margin:15px; padding:10px; box-shadow:0 0 5px #aaa;
+background: #FFF; border-radius: 3px; color:black;">
+                <li class="list1_desc" style="float:left; width:20%; min-width:100px;">
+                    <h3>Работа с бисером/бусами</h3>
+                  <p>Осваиваем основные техники плетения. Работаем с крупным бисером и бусами</p>
+                </li>
+                <li class="list1_img" style="float:left; width: 75%; margin-left:1em;"><img src="images/w5.jpg" class="img-responsive"></li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<footer style="margin-top:0px; border-top:none;">
+    <div style="text-align:right; background:#2a2a2a; padding:1em; color: #fff;">
+        © Bussines.ru <br>2010-2014
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/examples/vendors/jquery/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap -->
+<script src="/examples/vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>		
